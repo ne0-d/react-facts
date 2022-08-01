@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+body{
+  font-size: 65.5%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  
+  width: auto;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 90px;
+  background-color: #fff;
+  /* margin: 0; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: azure;
+  font-size: 16px;
+  padding: 0 25px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+
+}
+nav.dark {
+  background-color: #21222A;
+}
+.logo-head{
+  display: flex;
+  align-items: center;
+}
+nav > h3{
+  font-size: 22px;
+  color: #61DAFB;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.react-logo{
+  width: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggler {
+  display: flex;
+  align-items: center;
 }
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+main{
+  background-image: url('./react-logo-light.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: white;
+  color: #2B283A;
+  font-family: Inter;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  justify-content: left;
+  position: relative;
+}
+main.dark {
+  background-image: url("./reactjs-icon-dark.svg"); 
+  background-color: #282D35;
+  color: white;    
+}
+.reactjs-icon{
+  position: absolute;
+  z-index: 0;
+  
+}
+
+.heading{
+  margin-top: 3rem;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  letter-spacing: -0.05em;
+}
+ul{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom:4rem;
+  
+  /* margin-left: 74px; */
+}
+.list-items{
+  padding-block: 10px;
+  margin-left: 20px;
+}
+ul > li::marker{
+  color: #61DAFB;
+  font-size: 1.4rem;
+}
+
